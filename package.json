@@ -1,0 +1,33 @@
+{
+  "name": "react-native-radio-btn",
+  "version": "0.1.0",
+  "description": "Custom Radio button component for React Native",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shankariyerr/react-native-radio-btn.git"
+  },
+  "keywords": [
+    "react-native",
+    "radio",
+    "custom-radio-button",
+    "button",
+    "radio-button",
+    "react-component",
+    "ios",
+    "android",
+    "radio-buttons"
+  ],
+  "peerDependencies": {
+    "react-native": ">= 0.25"
+  },
+  "author": "shankariyerr (https://github.com/shankariyerr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shankariyerr/react-native-radio-btn/issues"
+  },
+  "homepage": "https://github.com/shankariyerr/react-native-radio-btn"
+}
