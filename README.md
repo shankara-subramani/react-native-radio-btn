@@ -1,4 +1,4 @@
-# React Native Radio Button 🚧
+# React Native Radio Button
 
 Fork of: [react-native-flexi-radio-button](https://github.com/thegamenicorus/react-native-flexi-radio-button)
 
