@@ -16,36 +16,53 @@ yarn add react-native-radio-btn
 ## Usage
 
 ```
-import {RadioGroup, RadioButton} from 'react-native-flexi-radio-button'
+import {RadioGroup, RadioButton} from 'react-native-radio-btn'
 
-onSelect(index, value){
-  this.setState({
-    text: `Selected index: ${index} , value: ${value}`
-  })
-}
+state = {
+   radioItems: [
+     {
+       id: 1,
+       label: 'Item 1',
+       selected: false,
+     },
+     {
+       id: 2,
+       label: 'Item 2',
+       selected: false,
+     },
+     {
+       id: 3,
+       label: 'Item 3',
+       selected: false,
+     },
+   ],
+ };
+
+ onSelect(index, value) {
+   console.log(`Selected index: ${index} , value: ${value}`);
+ }
 
 render(){
   return(
     <View style={styles.container}>
-    
-      <RadioGroup
-        onSelect = {(index, value) => this.onSelect(index, value)}
-      >
-        <RadioButton value={'item1'} >
-          <Text>This is item #1</Text>
-        </RadioButton>
 
-        <RadioButton value={'item2'}>
-          <Text>This is item #2</Text>
-        </RadioButton>
-
-        <RadioButton value={'item3'}>
-          <Text>This is item #3</Text>
-        </RadioButton>
+    <RadioGroup onSelect={(index, value) => this.onSelect(index, value)}>
+        {this.state.radioItems.map((item, index) => {
+          return (
+            <RadioButton
+              key={index}
+              value={item.label}
+              displayText={item.label}
+              displayTextColor="#000"
+              displayTextActiveColor="#fff"
+              prefixColor="rgba(0, 0, 0, 0.4)"
+              prefixActiveColor="rgba(0, 0, 0, 0.4)"
+              prefixWithNumbers
+            />
+          );
+        })}
       </RadioGroup>
-      
-      <Text style={styles.text}>{this.state.text}</Text>
-      
+
     </View>
   )
 }
