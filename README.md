@@ -91,6 +91,7 @@ render(){
 | disabled | bool |  false | If true, disable all interactions for this component.  |
 | displayTextColor | string | '#000' | color of label text |
 | displayTextActiveColor | string | '#fff' | color of label text when selected |
+| selectedBackgroundColor | string | '#E08036' | background color of the button when selected |
 | prefixColor | string | '#000' | color of prefixes |
 | prefixActiveColor | string | '#fff' | color of prefixes when selected |
 | prefixWithAlphabet | boolean | false | prefixes label with alphabets (a,b,...z) |
